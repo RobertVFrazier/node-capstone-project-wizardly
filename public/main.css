@@ -3,7 +3,7 @@ form, section {
 }
 
 body{
-  font-family: 'Aclonica', 'Arial', san-serif;
+  font-family: 'Aclonica', 'Arial', sans-serif;
   font-size: 16px;
   background-image: url('./images/fireballs2.png'), url('./images/texture5.png');
   background-repeat: repeat;
@@ -157,6 +157,10 @@ label {
   width: 85%;
   max-height: 535px;
   overflow: auto;
+}
+
+.spell-prepared{
+  background-color: yellow;
 }
 
 #wizards{

@@ -108,10 +108,9 @@ const renderSpellBookResults = function (store) {
     const spellName = store.spellBookListDetails.find(spellNameFind);
   
     return `<li id="${item.spell_id}">
-                <a href="${item.url}" class="see-spell-book-details">${spellName.name}, ${spellName.type}</a>
-                <a href="${item.url}" class="spell-prepared-toggle">Prepare spell</a>
-                <a href="${item.url}" class="spell-book-remove">Remove spell</a>
-                <p>Prepared? : ${item.prepared}</p>
+                <a href="${item.url}" class = "see-spell-book-details ${item.prepared ? 'spell-prepared' : ''}">${spellName.name}, ${spellName.type}</a>
+                <br><a href="${item.url}" class = "spell-prepared-toggle"><button type="button">${item.prepared ? 'Un-Prepare spell' : 'Prepare spell'}</button></a>
+                <a href="${item.url}" class = "spell-book-remove"><button type="button">Remove spell</button></a><hr>
               </li>`;
   });
   
